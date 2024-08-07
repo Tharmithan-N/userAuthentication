@@ -1,9 +1,11 @@
 import './App.css';
+import Login from './pages/login';
 
 function App() {
   return (
-    <div className='text-red-700'>Sample app</div>
+    <Login />
   );
 }
 
 export default App;
+
