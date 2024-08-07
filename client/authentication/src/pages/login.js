@@ -2,6 +2,7 @@ import React from "react";
 import bgImg from "../assets/images/bgImg.jpg";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 function Login() {
   return (
@@ -22,7 +23,7 @@ function Login() {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="border border-gray-300 rounded-md px-[5px] py-[4px] w-full text-[14px] mt-[3px]"
+                    className="border border-gray-300 rounded-md px-[5px] py-[4px] w-full text-[12px] mt-[3px]"
                   />
                 </div>
               </div>
@@ -39,11 +40,11 @@ function Login() {
                   <input
                     type="password"
                     placeholder="Enter your password"
-                    className="border border-gray-300 rounded-md px-[5px] py-[4px] w-full text-[14px] mt-[3px]"
+                    className="border border-gray-300 rounded-md px-[5px] py-[4px] w-full text-[12px] mt-[3px]"
                   />
                 </div>
               </div>
-              <div className="mb-4 mt-[20px]">
+              <div className="mb-4 mt-[20px] text-[9px] flex gap-[5px] font-[600]">
                 <input type="checkbox" /> Remember for 30 days
               </div>
               <div className="mb-4">
@@ -72,7 +73,9 @@ function Login() {
             </div>
             <div className="text-center text-[14px] font-[600] mt-[30px]">
               <span>Don’t have an account?</span>
-              <span className="text-[#0F3DDE] cursor-pointer"> Sign Up</span>
+              <span className="text-[#0F3DDE] cursor-pointer">
+                <Link to="/signUp"> Sign Up</Link>
+              </span>
             </div>
           </div>
         </div>
