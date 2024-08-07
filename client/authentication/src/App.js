@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>Sample app</div>
+    <div className='text-red-700'>Sample app</div>
   );
 }
 
